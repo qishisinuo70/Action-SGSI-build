@@ -92,7 +92,7 @@ jobs:
         run: |
           cd $GITHUB_WORKSPACE/Tool-SGSI-build
           pwd
-          tar -r AB_${{ github.event.inputs.REPACK_NAME }} SGSI/*
+          zip -9 AB_${{ github.event.inputs.REPACK_NAME }} SGSI
           ls "AB_${{ github.event.inputs.REPACK_NAME }}"
           echo "--------------------------------------"
           ls
